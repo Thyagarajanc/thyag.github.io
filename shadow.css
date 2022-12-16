@@ -37,7 +37,14 @@
     inset: 0;
     display: grid;
     place-content: center;
-    font-size: 12rem;
+    font-size: 120px;
+  }
+  @media only screen and (min-device-width: 480px){
+    .glow, 
+    .glow-shadow{
+        font-size: 160px; 
+    }
+   
   }
   .glow {
     --glow-color: hsl(248, 16%, 39%);
