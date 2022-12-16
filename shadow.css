@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    display: grid;
+    place-content: center;
+    background-color: hsl(0, 0%, 0%);
+    grid-template-columns: 100%;
+    min-height: 90vh;
+  }
+  .wrapper {
+    background-image: url(https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding-block-end: 2rem;
+    padding-inline: 2rem;
+    overflow-x: clip;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 15vw, 15rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    perspective: 2.5em;
+  }
+  
+  .glow, 
+  .glow-shadow {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    font-size: 12rem;
+  }
+  .glow {
+    --glow-color: hsl(248, 16%, 39%);
+    background: inherit;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    mix-blend-mode: plus-lighter;
+    -webkit-text-stroke: 0.012em rgba(241, 240, 255, 0.384);
+    filter: drop-shadow(0px 0px 5px var(--glow-color)) 
+      drop-shadow(0px 0px 10px var(--glow-color));
+  }
+  
+  
+  .glow-shadow {
+    color: hsl(20, 100%, 98%);
+    mix-blend-mode: soft-light;
+    filter: brightness(2);
+    transform:translateY(10%)                 
+      rotateX(81deg) 
+      scaleY(-1)                               
+      translateY(-15%) scaleY(1.35)
+  }   
+  
+  
