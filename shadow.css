@@ -76,7 +76,15 @@
     transform:translateY(13%)                 
       rotateX(83deg) 
       scaleY(1)                               
-      translateY(11%) scaleY(1.85)
+      translateY(11%) scaleY(1.85);
+      -ms-transform: translateY(13%)                 
+      rotateX(83deg) 
+      scaleY(1)                               
+      translateY(11%) scaleY(1.85);
+-webkit-transform: translateY(13%)                 
+rotateX(83deg) 
+scaleY(1)                               
+translateY(11%) scaleY(1.85);
   }   
   
   
