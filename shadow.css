@@ -37,13 +37,21 @@
     inset: 0;
     display: grid;
     place-content: center;
+  }
+  .glow{
     font-size: 120px;
   }
+  .glow-shadow{
+    font-size: 70px;
+  }
+  
   @media only screen and (min-device-width: 480px){
-    .glow, 
-    .glow-shadow{
-        font-size: 160px; 
-    }
+    .glow{
+        font-size: 160px;
+      }
+      .glow-shadow{
+        font-size: 94px;
+      }
    
   }
   .glow {
@@ -65,10 +73,10 @@
     color: hsl(20, 100%, 98%);
     mix-blend-mode: soft-light;
     filter: brightness(2);
-    transform:translateY(10%)                 
-      rotateX(81deg) 
-      scaleY(-1)                               
-      translateY(-15%) scaleY(1.35)
+    transform:translateY(13%)                 
+      rotateX(83deg) 
+      scaleY(1)                               
+      translateY(11%) scaleY(1.85)
   }   
   
   
